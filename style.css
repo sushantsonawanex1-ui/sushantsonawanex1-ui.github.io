@@ -174,3 +174,157 @@ header{
     align-items:center;
     font-size:120px;
 }
+/* ==========================
+ABOUT
+========================== */
+
+.about-container{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    color:#c9d1d9;
+    font-size:18px;
+    line-height:1.9;
+}
+
+/* ==========================
+SKILLS
+========================== */
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:25px;
+}
+
+.skill{
+    background:#161b22;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    transition:.4s;
+    border:1px solid #30363d;
+}
+
+.skill:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px rgba(88,166,255,.4);
+}
+
+.skill i{
+    font-size:50px;
+    color:#58a6ff;
+    margin-bottom:15px;
+}
+
+.skill h3{
+    font-size:20px;
+}
+
+/* ==========================
+PROJECTS
+========================== */
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#161b22;
+    border-radius:15px;
+    padding:30px;
+    border:1px solid #30363d;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(35,134,54,.4);
+}
+
+.card h3{
+    color:#58a6ff;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#c9d1d9;
+    line-height:1.7;
+}
+
+/* ==========================
+CONTACT
+========================== */
+
+.contact-box{
+    max-width:700px;
+    margin:auto;
+    background:#161b22;
+    padding:40px;
+    border-radius:15px;
+    text-align:center;
+    border:1px solid #30363d;
+}
+
+.contact-box p{
+    margin:20px 0;
+    font-size:18px;
+}
+
+.contact-box i{
+    color:#58a6ff;
+    margin-right:10px;
+}
+
+/* ==========================
+FOOTER
+========================== */
+
+footer{
+    background:#161b22;
+    padding:25px;
+    text-align:center;
+    color:#c9d1d9;
+}
+
+/* ==========================
+RESPONSIVE
+========================== */
+
+@media(max-width:900px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+    padding-top:100px;
+}
+
+.hero-content h1{
+    font-size:45px;
+}
+
+.hero-content h2{
+    font-size:28px;
+}
+
+.circle{
+    width:250px;
+    height:250px;
+    font-size:90px;
+}
+
+.nav-links{
+    display:none;
+}
+
+.menu-btn{
+    display:block;
+}
+
+section{
+    padding:80px 7%;
+}
+
+}
